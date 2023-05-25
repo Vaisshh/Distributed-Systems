@@ -1,0 +1,6 @@
+idlj -fall ReverseModule.idl
+javac *.java ReverseModule/*.java
+tnameserv -ORBInitialPort 3000
+java ReverseServer -ORBInitialPort 3000 -ORBInitialHost localhost
+java ReverseClient -ORBInitialPort 3000 -ORBInitialHost localhost
+
